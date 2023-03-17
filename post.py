@@ -2,7 +2,7 @@ import requests
 import os
 
 def post(article, time):
-    bot_token = os.environ.get('TELEGRAM_API') # replace with your bot token
+    bot_token = str(os.environ.get('TELEGRAM_API')) # replace with your bot token
     chat_id = "-1001773030359" # replace with your channel id
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
 
